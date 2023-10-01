@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML Blog page</title>
+    <style> 
+      body {
+        background-image: url(assets/playa.jpg);  
+      };
+    </style>
+  </head>  <!-- Cómo se le da un alt al background image? -->
+  <body>
+    <header>
+      <nav>
+            <ul> 
+                <li style="display:inline">
+                  <h3>Mi blog</h3>
+                </li>   
+                <li style="display:inline">
+                    <a href="home.html">Inicio</a>
+                </li>
+                <li style="display:inline">
+                    <a href="articles.html">Artículos</a>
+                </li>
+                <li style="display:inline">
+                    <select name="dropdown-nav" id="dropdown-nav" placeholder="Idioma">
+                        <option value="" disabled selected hidden>Idioma</option>
+                        <option value="Espanol">Español</option>
+                        <option value="Ingles">English</option>
+                    </select>
+                </li style="display:inline">
+                <li style="display:inline">
+                  <div>
+                    <input type="text" placeholder="Search" name="search">
+                    <button id="search">Search</button>
+                </div>
+                </li>
+            </ul>
+      </nav>
+    </header>
+    
+    <article style="width: 70%">
+      <h2>La primer publicación</h2>
+      <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio impedit sequi veniam nobis recusandae laborum accusamus asperiores soluta aut ipsam, ut quo a fugit minima quae ea dolore dolor nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, consectetur, ullam natus odio soluta doloremque saepe, obcaecati rerum eius provident nemo eligendi hic sed aliquid ad iste perspiciatis ab sit!</p>
+    </article>
+
+    <aside style="float: right">
+      <h3>Lo que estoy escuchando:</h3>  
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5h1BN75CEh8wdSwE1xrbSe?utm_source=generator&theme=0" width="250" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </aside>
+
+    <article style="width: 70%">
+      <h2>La segunda publicación</h2>
+      <figure>
+        <img src="assets/hands.png" alt="Persona escribiendo en una computadora">
+        <figcaption>Trabajando desde la playa</figcaption>
+      </figure>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet consequatur in quisquam minima tenetur nobis corporis accusantium. Placeat asperiores assumenda quod esse quo voluptatum id, labore repudiandae nihil commodi doloribus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam aliquid totam animi. Veniam illo alias facilis dolores autem aliquam suscipit at eum voluptates, id quod laudantium magni molestias doloribus esse. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur sapiente commodi rem repellat numquam ipsa impedit possimus. Eum eligendi excepturi architecto, molestias mollitia officiis iure debitis, cupiditate sunt, quasi expedita.
+      </p>
+    </article>
+
+    <section>
+      <h3>Contactanos:</h3>
+      <form>
+        <label for="name">Nombre:</label> <br>
+        <input type="text" name="name" id="name" placeholder="Tu nombre">
+        <br>
+        <label for="email">Email <abbr title="required">*</abbr> (Required):</label> <br>
+        <input type="email" name="email" id="email" placeholder="Tu mail" required>
+        <br>
+        <label for="mensaje">Tu mensaje <abbr title="required">*</abbr> (Required):</label> <br>
+        <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Dejanos tu mensaje" required></textarea>
+        <br>
+        <button>Submit</button>
+      </form>
+    </section>
+    <footer>
+      <h4>Nuestras redes:</h4>
+      <ul>
+        <li style="display:inline">
+          <a href="#" target="_blank">Instagram</a>
+        </li>
+        <li style="display:inline">
+          <a href="#" target="_blank">Tiktok</a>
+        </li>
+        <li style="display:inline">
+          <a href="#" target="_blank">Twitter</a>
+        </li>
+        <li style="display:inline">
+          <a href="#" target="_blank">Facebook</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
